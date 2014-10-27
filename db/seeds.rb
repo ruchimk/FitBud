@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# Activity.destroy_all
+
+activities = Activity.create([{ name: 'Hiking'}, { name: 'Running'}, { name: 'Yoga'}, { name: 'Rock-climbing'}, { name: 'Biking'}, { name: 'Kayaking'}])
+
+admin = User.create(username: 'ruchi', email: 'rmalik2788@gmail.com', password: "logme1234", password_confirmation: "logme1234", location: 'Washington DC', admin: true)

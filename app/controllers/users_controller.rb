@@ -7,6 +7,4 @@ class UsersController < ApplicationController
 
     # @activities = Activity.all
   end
-
-  end
 end

@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :activities
   root to: 'activities#index'
 
-  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: { registrations: 'registrations' }
+
 
   devise_scope :user do
     get '/sign_up', to: 'devise/registrations#new'
