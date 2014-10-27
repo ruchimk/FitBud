@@ -1,0 +1,31 @@
+_info.html.erb
+<%= image_tag @partner.avatar(:medium) %>
+<div class="right">
+  <h2> <%= @partner.name.upcase %> </h2>
+  <h4> wants to code in: </h4>
+  <ul>
+    <% @partner.activities.each do |activity| %>
+      <li> <%= link_to activity.name, activity_path(activity) %> </li>
+    <% end %>
+  </ul>
+  <h4> lives in: </h4>
+  <%= @partner.location %>
+
+  <% if current_user == @partner %>
+    <div>
+      <h4> Add a activity: </h4>
+      <ul>
+        <% @activities.each do |activity| %>
+          <% unless current_user.activities.include?(activity) %>
+            <li> <%= link_to activity.name, users_activities_path(activity_id: activity.id), method: :post %> </li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+    <h4> <%= link_to 'Edit Profile', edit_user_registration_path(current_user) %> </h4>
+  <% end %>
+    <% unless current_user == @partner || current_user.partners.include?(@partner) %>
+    <div class="request"> <h2> <%= link_to "Pear Up!", pairing_index_path(partner_id: @partner), method: :post  %> </h2>
+    </div>
+    <% end %>
+</div>

@@ -1,0 +1,16 @@
+<header>
+  <div class="left-header">
+    <h1> <%= link_to 'FitBud', '/' %> </h1>
+  </div>
+  <ul>
+    <% if user_signed_in? %>
+      <li><%= link_to 'sign out', sign_out_path, method: :delete %></li> |
+      <li><%= link_to 'my profile', user_path(current_user) %></li> |
+      <li><%= link_to 'browse', activities_path %></li> |
+      <li> <%= link_to 'inbox', user_messages_path(user_id: current_user.id) %> </li>
+    <% else %>
+      <li> <%= link_to 'sign in', sign_in_path %> </li> |
+      <li> <%= link_to 'sign up', sign_up_path %> </li>
+    <% end %>
+  </ul>
+</header>

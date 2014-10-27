@@ -1,0 +1,10 @@
+<div class="requests">
+  <h2> My FitBud Requests <small> (<%= @requests.count %>) </small> </h2>
+<% @requests.each do |request| %>
+  <%= link_to(user_path(request.partner)) do %>
+  <%= image_tag request.partner.avatar(:thumb) %>
+  <% end %>
+  <p> <%= link_to "Confirm", pairing_confirm_path(pairing_id: request.id, partner_id: request.partner.id), method: :post %> </p>
+<% end %>
+<br>
+</div>

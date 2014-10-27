@@ -1,0 +1,8 @@
+<div class="partners">
+  <h2> My FitBud <small> (<%= current_user.partners.count %>) </small> </h2>
+<% current_user.partners.each do |partner| %>
+  <%= link_to user_path(partner) do %>
+    <%= image_tag partner.avatar(:thumb) %>
+  <% end %>
+<% end %>
+</div>

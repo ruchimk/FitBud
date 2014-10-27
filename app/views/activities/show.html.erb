@@ -1,9 +1,18 @@
-<p id="notice"><%= notice %></p>
+<%= render 'common/flash' %>
+<section class="activity-show">
+  <h2> <%= pluralize(@activity.users.count, "FitBud") %> in the <%= @activity.name %> Room </h2>
+  <% @users.each do |user| %>
+    <div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @activity.name %>
-</p>
+      <!-- show users who listed this particular activity -->
+      <%#= user.avatar %>
+      <%= link_to(user_path(user)) do %>
+        <%= image_tag user.avatar(:thumb) %>
+        <p><%= user.name.capitalize %> </p>
+      <% end %>
+      <!-- request redirect to page where you can send message and invite -->
 
-<%= link_to 'Edit', edit_activity_path(@activity) %> |
-<%= link_to 'Back', activities_path %>
+    </div>
+  <% end %>
+</section>
+
