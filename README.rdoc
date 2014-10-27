@@ -1,0 +1,45 @@
+FitBud
+Make new friends while getting in your workout!
+
+FitBud is an app that matches users by location and their favorite outdoor activity! It makes it easy to make new friends in your neighborhood who also want to find workout partners for specified activity.
+
+
+Technologies Used
+
+Ruby 2.1.2
+Ruby on Rails 4.1.1
+PostgreSQL Database
+User authentication & authorization from Devise gem
+Profile picture functionality from Paperclip gem
+Testing using rspec-rails, capybara, shoulda-matchers and factory_girl_rails
+CSS styling using SASS
+Zurb Foundation
+
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
