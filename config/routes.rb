@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'match/create'
+  resources :activities
+  root to: 'activities#index'
 
-  get 'users/show'
-
-  root 'activities#index'
-
-  devise_for :users
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
 
   devise_scope :user do
     get '/sign_up', to: 'devise/registrations#new'
@@ -14,16 +11,21 @@ Rails.application.routes.draw do
     delete 'sign_out', to: 'devise/sessions#destroy'
   end
 
-  resources :activities
 
-  resources :users, only: [:show]  do
-    resources :messages
-  end
+
+  # resources :users, only: [:show]  do
+  #   resources :messages
+  # end
   # resources :match, only: [:create] do
   #   post '/confirm', to: 'pairing#confirm'
   # end
   # resources :users_activities, only: [:create, :destroy]
 
+  # get 'site/index'
+
+  # get 'match/create'
+
+  # get 'users/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

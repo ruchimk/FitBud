@@ -5,6 +5,13 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :activities
+  validates_presence_of :username
+
+
+  private
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation, :remember_me, :username
+                                 )
+  end
 
 end
