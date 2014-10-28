@@ -17,7 +17,7 @@ class MatchController < ApplicationController
     @user = current_user
     @partner = User.find(params[:partner_id])
 
-    if @pairing = Pairing.confirm(@user, @partner)
+    if @match = Match.confirm(@user, @partner)
       flash[:success] = "Partnership confirmed!"
       redirect_to user_path(@user)
     else
