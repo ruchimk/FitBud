@@ -24,7 +24,7 @@
     <h4> <%= link_to 'Edit Profile', edit_user_registration_path(current_user) %> </h4>
   <% end %>
     <% unless current_user == @partner || current_user.partners.include?(@partner) %>
-    <div class="request"> <h2> <%= link_to "Request #{@partner} FitBud", new_match_path(partner_id: @partner), method: :post  %> </h2>
+    <div class="request"> <h2> <%= link_to "Request user as a FitBud", new_match_path(partner_id: @partner), method: :post  %> </h2>
     </div>
     <% end %>
 </div>
