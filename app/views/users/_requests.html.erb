@@ -2,7 +2,7 @@
   <h2> My FitBud Requests <small> (<%= @requests.count %>) </small> </h2>
 <% @requests.each do |request| %>
   <%= link_to(user_path(request.partner)) do %>
-  <%# image_tag request.partner.avatar(:thumb) %>
+  <%image_tag request.partner.avatar(:thumb) %>
   <% end %>
   <p> <%= link_to "Confirm", match_confirm_path(match_id: request.id, partner_id: request.partner.id), method: :post %> </p>
 <% end %>

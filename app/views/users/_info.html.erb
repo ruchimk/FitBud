@@ -4,7 +4,7 @@
   <h4> wants a partner for: </h4>
   <ul>
     <% @partner.activities.each do |activity| %>
-      <li> <%= link_to activity.name, activity_path(activity) %> </li>
+      <li> <%= activity.name %> </li>
     <% end %>
   </ul>
   <h4> lives in: </h4>
@@ -12,7 +12,7 @@
 
   <% if current_user == @partner %>
     <div>
-      <h4> Add a activity: </h4>
+      <h4> Add an activity: </h4>
       <ul>
         <% @activities.each do |activity| %>
           <% unless current_user.activities.include?(activity) %>
