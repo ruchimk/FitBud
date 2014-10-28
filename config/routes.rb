@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :messages
+
+  resources :user_activities
+
   resources :activities
   root to: 'activities#index'
 
@@ -11,6 +15,17 @@ Rails.application.routes.draw do
     get 'sign_in', to: 'devise/sessions#new'
     delete 'sign_out', to: 'devise/sessions#destroy'
   end
+
+  resources :users, only: [:show]  do
+    resources :messages
+  end
+
+  #  resources :pairing, only: [:create] do
+  #   post '/confirm', to: 'pairing#confirm'
+  # end
+
+  resources :users_languages, only: [:create, :destroy]
+
 
 
 

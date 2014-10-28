@@ -1,8 +1,7 @@
-_info.html.erb
-<%= image_tag @partner.avatar(:medium) %>
+<%# image_tag @partner.avatar(:medium) %>
 <div class="right">
-  <h2> <%= @partner.name.upcase %> </h2>
-  <h4> wants to code in: </h4>
+  <h2> <%= @partner.username.upcase %> </h2>
+  <h4> wants a partner for: </h4>
   <ul>
     <% @partner.activities.each do |activity| %>
       <li> <%= link_to activity.name, activity_path(activity) %> </li>

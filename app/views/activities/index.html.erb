@@ -1,9 +1,6 @@
 <section class="index">
   <h1> Choose your favorite outdoor activity: </h1>
   <% @activities.each do |activity| %>
-    <a href="<%= activity_path(activity)  %>">  <div class = "activity-button" id="<%= activity.name.downcase.split.join %>">
-        <%= activity.name.upcase %>
-      </div>
-    </a>
+    <%= button_to activity.name, user_activities_path(activity_id: activity, user_id: current_user) %>
   <% end %>
 </section>

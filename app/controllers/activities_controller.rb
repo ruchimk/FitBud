@@ -5,13 +5,14 @@ class ActivitiesController < ApplicationController
   # GET /activities.json
   def index
     @activities = Activity.all
+    @methods = User.methods
   end
 
   # GET /activities/1
   # GET /activities/1.json
   def show
     @activity = Activity.find(params[:id])
-    @users = @activities.users
+    #@users = User.useractivities.where(:activity_id, @activity.id)
   end
 
   # GET /activities/new
@@ -64,8 +65,6 @@ class ActivitiesController < ApplicationController
     @user = User.find(params[:id])
     @user.admin
   end
-
-
 
   private
   # Use callbacks to share common setup or constraints between actions.

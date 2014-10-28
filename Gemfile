@@ -28,7 +28,24 @@ gem 'spring',        group: :development
 
 gem 'devise', '~> 3.0.0.rc'
 
+group :development, :test do
+  gem 'shoulda-matchers'
+  gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'rspec-its',  ">= 1.0.1"
+  gem 'factory_girl_rails', '4.4.0'
+  gem 'launchy'
+end
 
+group :test do
+  gem 'selenium-webdriver', '2.41.0'
+  gem 'capybara', '2.2.1'
+  gem 'database_cleaner'
+end
+
+gem 'paperclip', '~> 4.2.0'
+
+
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
