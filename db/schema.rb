@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141028024911) do
+ActiveRecord::Schema.define(version: 20141028033640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,19 @@ ActiveRecord::Schema.define(version: 20141028024911) do
     t.datetime "updated_at"
     t.integer  "user_id"
   end
+
+  create_table "matches", force: true do |t|
+    t.integer  "user_id",                 null: false
+    t.integer  "partner_id",              null: false
+    t.string   "message"
+    t.string   "status",     default: "", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "matches", ["partner_id"], name: "index_matches_on_partner_id", using: :btree
+  add_index "matches", ["user_id", "partner_id"], name: "index_matches_on_user_id_and_partner_id", using: :btree
+  add_index "matches", ["user_id"], name: "index_matches_on_user_id", using: :btree
 
   create_table "messages", force: true do |t|
     t.integer  "sender_id",    null: false
