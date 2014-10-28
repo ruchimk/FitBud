@@ -1,4 +1,5 @@
-class Match < ActiveRecord::Basebelongs_to :user
+class Match < ActiveRecord::Base
+  belongs_to :user
   belongs_to :partner, class_name: 'User'
 
   validates_presence_of :user_id, :partner_id

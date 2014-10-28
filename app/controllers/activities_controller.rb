@@ -11,8 +11,8 @@ class ActivitiesController < ApplicationController
   # GET /activities/1
   # GET /activities/1.json
   def show
-    @activity = Activity.find(params[:id])
-    #@users = User.useractivities.where(:activity_id, @activity.id)
+      @activity = Activity.find(params[:id])
+    # @users = User.user_activities.where(:activity_id, @activity.id)
   end
 
   # GET /activities/new

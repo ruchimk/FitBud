@@ -4,7 +4,7 @@
   <%= link_to(user_path(request.partner)) do %>
   <%= image_tag request.partner.avatar(:thumb) %>
   <% end %>
-  <p> <%= link_to "Confirm", pairing_confirm_path(pairing_id: request.id, partner_id: request.partner.id), method: :post %> </p>
+  <p> <%= link_to "Confirm", match_confirm_path(match_id: request.id, partner_id: request.partner.id), method: :post %> </p>
 <% end %>
 <br>
 </div>

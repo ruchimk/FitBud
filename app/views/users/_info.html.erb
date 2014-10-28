@@ -16,7 +16,7 @@
       <ul>
         <% @activities.each do |activity| %>
           <% unless current_user.activities.include?(activity) %>
-            <li> <%= link_to activity.name, users_activities_path(activity_id: activity.id), method: :post %> </li>
+            <li> <%= link_to activity.name, user_activities_path(activity_id: activity.id), method: :post %> </li>
             <% end %>
         <% end %>
       </ul>
@@ -24,7 +24,7 @@
     <h4> <%= link_to 'Edit Profile', edit_user_registration_path(current_user) %> </h4>
   <% end %>
     <% unless current_user == @partner || current_user.partners.include?(@partner) %>
-    <div class="request"> <h2> <%= link_to "Pear Up!", pairing_index_path(partner_id: @partner), method: :post  %> </h2>
+    <div class="request"> <h2> <%= link_to "Request #{@partner} FitBud", new_match_path(partner_id: @partner), method: :post  %> </h2>
     </div>
     <% end %>
 </div>
