@@ -1,5 +1,7 @@
+<div class="showactivity">
 <%= render 'common/flash' %>
-<div class="activitiesshow">
+<div class="row">
+<div class="small-6 small-centered small-centered columns">
 <div class="panel">
   <h3> <%= pluralize(@activity.users.count, "FitBud") %> selected <%= @activity.name %> too! </h3>
   <% @activity.users.each do |user| %>
@@ -17,4 +19,7 @@
      </div>
   <% end %>
 </div>
+</div>
+</div>
+
 

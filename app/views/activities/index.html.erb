@@ -1,6 +1,13 @@
-  <div class="index">
+
+<div class="index">
+<div class="panel">
+  <div class="large-6 small-centered large-centered columns">
   <h3> Choose your favorite outdoor activity: </h3>
   <% @activities.each do |activity| %>
     <%= button_to activity.name, user_activities_path(activity_id: activity, user_id: current_user) %>
   <% end %>
 </div>
+</div>
+</div>
+
+

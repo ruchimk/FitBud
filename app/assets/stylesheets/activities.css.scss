@@ -2,18 +2,127 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// .activityshow {
-//   padding: 50px 30px 50px 30px;
-//   background-color: white;
-//   margin: 0 auto;
-//   width: 300px;
-//   height: 550px
+.activityshow {
+  padding: 50px 30px 50px 30px;
+  background-color: white;
+  margin: 0 auto;
+  width: 300px;
+  height: 550px
 
-//     h2{
-//       color:#0099cc;
-//     }
-// }
+    h2{
+      color:#0099cc;
+    }
+}
 
-.activitiesshow{
+.index h3 {
+  color:green;
+}
+
+.index {
+  // clear: both;
+  // text-align: center;
+  .activity-button{
+    text-align: center;
+    width: 200px;
+    padding-top: 80px; padding-bottom: 80px;
+    display: inline-block;
+    margin: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  #hiking{
+    color: #fff;
+    background: url(/assets/images/hiking.jpg);
+    -webkit-box-shadow: inset 0px 0px 0px #C40202, 0px 5px 0px 0px #C40202, 0px 10px 5px #999;
+  }
+  #hiking:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #C40202, 0px 2px 0px 0px #C40202, 0px 5px 3px #999;
+  }
+  #running{
+    color: #5D87E8;
+    background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #C2AD11, 0px 5px 0px 0px #C2AD11, 0px 10px 5px #999;
+  }
+  #running:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #C2AD11, 0px 2px 0px 0px #C2AD11, 0px 5px 3px #999;
+  }
+  #yoga{
+    color: #000;
+    background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #DB3B00, 0px 5px 0px 0px #DB3B00, 0px 10px 5px #999;
+  }
+  #yoga:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #DB3B00, 0px 2px 0px 0px #DB3B00, 0px 5px 3px #999;
+  }
+  #rock-climibing{
+    color: #fff;
+    background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #008DBD, 0px 5px 0px 0px #008DBD, 0px 10px 5px #999;
+  }
+  #rock-climibing:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #008DBD, 0px 2px 0px 0px #008DBD, 0px 5px 3px #999;
+  }
+  #biking{
+    color: #fff;
+      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
+  }
+  #biking:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
+  }
+    #biking{
+    color: #fff;
+      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
+  }
+  #biking:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
+  }
+    #kayaking{
+    color: #fff;
+      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
+  }
+  #kayaking:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
+  }
+    #soccer{
+    color: #fff;
+      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
+  }
+  #soccer:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
+  }
+
+  #football{
+    color: #fff;
+      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
+  }
+  #football:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
+  }
+  #basketball{
+    color: #fff;
+     background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
+  }
+  #basketball:active{
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
+  }
 
 }

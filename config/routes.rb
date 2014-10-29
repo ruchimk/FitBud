@@ -11,8 +11,6 @@ Rails.application.routes.draw do
 
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: { registrations: 'registrations' }
 
-
-
   devise_scope :user do
     get '/sign_up', to: 'devise/registrations#new'
     get 'sign_in', to: 'devise/sessions#new'
@@ -29,18 +27,6 @@ Rails.application.routes.draw do
 
   resources :users_languages, only: [:create, :destroy]
 
-
-
-
-  # resources :users, only: [:show]  do
-  #   resources :messages
-  # end
-  # resources :match, only: [:create] do
-  #   post '/confirm', to: 'pairing#confirm'
-  # end
-  # resources :users_activities, only: [:create, :destroy]
-
-  # get 'site/index'
 
   # get 'match/create'
 
