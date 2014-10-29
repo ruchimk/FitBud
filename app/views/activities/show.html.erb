@@ -1,5 +1,6 @@
 <%= render 'common/flash' %>
-<div class="activityshow">
+<div class="activitiesshow">
+<div class="panel">
   <h3> <%= pluralize(@activity.users.count, "FitBud") %> selected <%= @activity.name %> too! </h3>
   <% @activity.users.each do |user| %>
     <div>
@@ -13,6 +14,7 @@
       <!-- request redirect to page where you can send message and invite -->
 
     </div>
+     </div>
   <% end %>
 </div>
 

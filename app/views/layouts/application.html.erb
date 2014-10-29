@@ -10,10 +10,8 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <h1><a href="#">FitBud</a></h1>
+      <h1><a href="/activities">FitBud</a></h1>
     </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <!-- <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> -->
   </ul>
 
   <section class="top-bar-section">
@@ -37,22 +35,13 @@
 
      <!-- Left Nav Section -->
      <div class="row">
+      <div class="large-12 columns"></div>
       <div class="large-8 columns"></div>
-      <div class="large-4 columns">
-        About FitBud: FitBud is an app designed to match people up by an outdoor activity they would like to find a partner for! Meet new people and stay Fit while doing it with FitBud!
-      </div>
-   </div>
+    </div>
+
+
   </section>
 </nav>
-
-<% if user_signed_in? %>
-  Logged in as <strong><%= current_user.username %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>
 
 <%= yield %>
 

@@ -1,6 +1,6 @@
-<section class="index">
-  <h1> Choose your favorite outdoor activity: </h1>
+  <div class="index">
+  <h3> Choose your favorite outdoor activity: </h3>
   <% @activities.each do |activity| %>
     <%= button_to activity.name, user_activities_path(activity_id: activity, user_id: current_user) %>
   <% end %>
-</section>
+</div>
