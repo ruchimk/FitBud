@@ -4,11 +4,11 @@ class UserActivitiesController < ApplicationController
     user = current_user
     activity = Activity.find(params[:activity_id])
     new_activity = current_user.user_activities.build(activity: activity)
-    if current_user.activities.find(activity)
-      redirect_to activity_path(activity)
-    elsif new_activity.save
+    if new_activity.save
       flash[:success] = "Successfully added #{activity.name} as your favorite activity..."
       redirect_to activity_path(activity)
+    elsif current_user.activities.find(activity)
+       redirect_to activity_path(activity)
     else
       flash[:error] = "Whoops, something went wrong..."
       redirect_to activities_path

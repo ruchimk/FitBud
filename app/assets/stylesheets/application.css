@@ -14,3 +14,72 @@
  *= require_self
  *= require foundation_and_overrides
  */
+ body {
+  background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+/*ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+h1{
+background-color:red;
+padding: 30px 10px 30px 10px;
+color:white;
+}
+
+h2{
+color: red;
+}
+
+img{
+text-align: center;
+margin-bottom: 15px;
+height: auto;
+width:75%;
+border-radius: 10px;
+-moz-box-shadow:    3px 3px 5px 6px #ccc;
+-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+
+.container {
+  width: 550px;
+  margin: 0 auto;
+  background-color: white;
+  padding:20px;
+}
+
+.container h2 {
+color:red;
+margin:16px;
+font-weight: bold;
+font-style: italic;
+text-align: left;
+}
+
+#header {
+  background-color: red;
+  height: 50px;
+  padding-top: 25px;
+}
+
+#header h1 {
+color: white;
+padding-left: 2px;
+}
+
+p {
+  text-align: left;
+  padding-left:  15px;
+  padding-top: 10px;
+}
+*/
+

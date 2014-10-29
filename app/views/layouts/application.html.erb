@@ -13,7 +13,7 @@
       <h1><a href="#">FitBud</a></h1>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    <!-- <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> -->
   </ul>
 
   <section class="top-bar-section">
@@ -22,20 +22,26 @@
       <li class="has-dropdown">
         <a href="#">Options</a>
         <ul class="dropdown">
-          <li><a href="#">My Profile</a></li>
+        <% if user_signed_in? %>
+          <li class="active"><%= link_to "My Profile", user_path(current_user) %></li>
           <li class="active"><a href="/activities">Browse Activities</a></li>
          <li class="active"><a href="/messages">Inbox</a></li>
          <li class="active"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
          <li class="active"><%= link_to 'Login', new_user_session_path %> </li>
+         <% else %>
          <li class="active"><%= link_to 'Sign up', new_user_registration_path %> </li>
-
-        </ul>
+         <% end %>
+       </ul>
       </li>
     </ul>
+
      <!-- Left Nav Section -->
-    <ul class="left">
-      <li><a href="#">About Fitbud</a></li>
-    </ul>
+     <div class="row">
+      <div class="large-8 columns"></div>
+      <div class="large-4 columns">
+        About FitBud: FitBud is an app designed to match people up by an outdoor activity they would like to find a partner for! Meet new people and stay Fit while doing it with FitBud!
+      </div>
+   </div>
   </section>
 </nav>
 

@@ -1,6 +1,6 @@
 <%= render 'common/flash' %>
-<section class="activity-show">
-  <h2> <%= pluralize(@activity.users.count, "FitBud") %> selected <%= @activity.name %> too! </h2>
+<div class="activityshow">
+  <h3> <%= pluralize(@activity.users.count, "FitBud") %> selected <%= @activity.name %> too! </h3>
   <% @activity.users.each do |user| %>
     <div>
 
@@ -14,5 +14,5 @@
 
     </div>
   <% end %>
-</section>
+</div>
 

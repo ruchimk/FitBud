@@ -8,11 +8,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :matches, -> { where "matches.status = 'accepted' " }
-  has_many :partners, through: :matches, source: :partner
+  has_many :matches
+  has_many :partners, :through => :matches, :class_name =>'User'
 
-
- has_many :received_messages, class_name: 'Message', foreign_key: :recipient_id
+  has_many :received_messages, class_name: 'Message', foreign_key: :recipient_id
   has_many :sent_messages, class_name: 'Message', foreign_key: :sender_id
 
   validates_presence_of :username, :email, :location
