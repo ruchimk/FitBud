@@ -23,6 +23,21 @@
   line-height: 1.4em;
 }
 
+
+
+#footer {
+  clear: both;
+  margin-top: 10px;
+  width: 80%;
+  margin: 0 auto;
+  bottom: 0;
+  height: relative;
+  text-align: center;
+   a {
+    color: red;
+  }
+
+
 /*ul {
   text-align: center;
   list-style-type: none;
