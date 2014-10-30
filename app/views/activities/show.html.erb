@@ -5,7 +5,7 @@
 <div class="panel">
   <h3> <%= pluralize(@activity.users.count, "FitBud") %> selected <%= @activity.name %> too! </h3>
   <% @activity.users.each do |user| %>
-    <div>
+    <div class="activitylinks">
 
       <!-- show users who listed this particular activity -->
       <%#= user.avatar %>

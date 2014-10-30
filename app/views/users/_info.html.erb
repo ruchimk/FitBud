@@ -1,4 +1,4 @@
-<%# image_tag @partner.avatar(:medium) %>
+
 <div class="partnerinfo">
   <h2> <%= @partner.username.upcase %> </h2>
   <h4> wants a partner for: </h4>
@@ -15,7 +15,6 @@
   Goals:<%= @partner.goals %><br>
   Email: <%= @partner.email %>
   ID: <%= @partner.id %> </p>
-
 
   <% if current_user == @partner %>
     <div>

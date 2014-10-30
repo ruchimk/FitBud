@@ -50,6 +50,6 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:recipient_id, :email, :title, :body).merge(sender_id: current_user.id)
+    params.require(:message).permit(:recipient_id, :title, :body).merge(sender_id: current_user.id)
   end
 end

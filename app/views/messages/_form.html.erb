@@ -11,8 +11,7 @@
   <% end %>
  <div>
 <%= f.label 'Choose recipient' %> <br>
-  <%= f.text_field :email, placeholder: 'Email' %>
-  <%= f.hidden_field :sender_id, :value => current_user.id %>
+  <%= f.select :recipient_id, current_user.partners.collect {|p| [ p.email, p.id ] } %>
 
   </div>
   <div>

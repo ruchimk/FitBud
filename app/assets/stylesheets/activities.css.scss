@@ -35,7 +35,7 @@
   }
   #hiking{
     color: #fff;
-    background: url(/assets/images/hiking.jpg);
+   background-image: url('hiking.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #C40202, 0px 5px 0px 0px #C40202, 0px 10px 5px #999;
   }
   #hiking:active{
@@ -44,7 +44,7 @@
   }
   #running{
     color: #5D87E8;
-    background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+    background-image: url('running.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #C2AD11, 0px 5px 0px 0px #C2AD11, 0px 10px 5px #999;
   }
   #running:active{
@@ -53,7 +53,7 @@
   }
   #yoga{
     color: #000;
-    background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+     background-image: url('yoga.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #DB3B00, 0px 5px 0px 0px #DB3B00, 0px 10px 5px #999;
   }
   #yoga:active{
@@ -62,7 +62,7 @@
   }
   #rock-climibing{
     color: #fff;
-    background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+     background-image: url('rock-climbing.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #008DBD, 0px 5px 0px 0px #008DBD, 0px 10px 5px #999;
   }
   #rock-climibing:active{
@@ -71,7 +71,7 @@
   }
   #biking{
     color: #fff;
-      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+      background-image: url('biking.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #biking:active{
@@ -80,7 +80,7 @@
   }
     #biking{
     color: #fff;
-      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+     background-image: url('biking.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #biking:active{
@@ -89,7 +89,7 @@
   }
     #kayaking{
     color: #fff;
-      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+     background-image: url('kayaking.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #kayaking:active{
@@ -98,7 +98,7 @@
   }
     #soccer{
     color: #fff;
-      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+     background-image: url('soccer.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #soccer:active{
@@ -108,7 +108,7 @@
 
   #football{
     color: #fff;
-      background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+     background-image: url('football.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #football:active{
@@ -117,7 +117,7 @@
   }
   #basketball{
     color: #fff;
-     background: url(http://photos2.meetupstatic.com/photos/event/7/2/1/e/highres_14849214.jpeg);
+     background-image: url('basketball.jpg');
     -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #basketball:active{
