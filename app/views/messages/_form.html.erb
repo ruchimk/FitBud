@@ -1,4 +1,3 @@
-
 <%= form_for(@message) do |f| %>
   <% if @message.errors.any? %>
     <div id="error_explanation">
@@ -12,10 +11,8 @@
   <% end %>
  <div>
 <%= f.label 'Choose recipient' %> <br>
-
-  <div class="field"><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
+    <%= f.collection_select :recipient_id, current_user.partners, :id, :name %>
+  </div>
   <div>
     <%= f.text_field :title, placeholder: 'Enter subject' %>
   </div>
