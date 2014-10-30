@@ -40,7 +40,21 @@
 
 .panel {
   text-align: center;
+  background: rgba(164,179,87,1);
+background: -moz-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,0.41) 45%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,179,87,1)), color-stop(45%, rgba(117,137,12,0.41)));
+background: -webkit-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,0.41) 45%);
+background: -o-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,0.41) 45%);
+background: -ms-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,0.41) 45%);
+background: linear-gradient(to right, rgba(164,179,87,1) 0%, rgba(117,137,12,0.41) 45%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );
+color: white;
+.field {
+  color:white;
 }
+}
+
+
 /*
 .custom-panel {
   @include panel(
