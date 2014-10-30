@@ -4,7 +4,7 @@ class MatchController < ApplicationController
     @partner = User.find(:partner_id)
     @match = Match.request(@user, @partner)
 
-    if @pairing
+    if @match
       flash[:success] = "Request successfully sent!"
       redirect_to user_path(@partner)
     else

@@ -6,15 +6,10 @@
   <h3> <%= pluralize(@activity.users.count, "FitBud") %> selected <%= @activity.name %> too! </h3>
   <% @activity.users.each do |user| %>
     <div class="activitylinks">
-
-      <!-- show users who listed this particular activity -->
-      <%#= user.avatar %>
       <%= link_to(user_path(user)) do %>
-        <%# image_tag user.avatar(:thumb) %>
+        <%= image_tag(user.avatar(:thumb))%>
         <p><%= user.username.capitalize %> </p>
       <% end %>
-      <!-- request redirect to page where you can send message and invite -->
-
   <% end %>
   </div>
      </div>

@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @user = User.find(params[:user_id])
+    @user = current_user
     @sent_messages = @user.sent_messages
     @received_messages = @user.received_messages
   end
@@ -13,13 +13,15 @@ class MessagesController < ApplicationController
 
   def new
     @message = current_user.sent_messages.build
+    @users= User.all
   end
 
   def create
+    @users = User.all
     @message = current_user.sent_messages.build(message_params)
     if @message.save
       flash[:success] = "Successfully sent!"
-      redirect_to user_messages_path
+      redirect_to user_messages_path(current_user)
     else
       flash[:error] = "Whoops, something went wrong..."
       render 'new'
@@ -27,11 +29,11 @@ class MessagesController < ApplicationController
   end
 
   def edit
-    @message = Message.find(params[:id])
+    @message = Message.find(current_user)
   end
 
   def update
-    @user = User.find(params[:user_id])
+    @user = User.find(current_user)
     @message = Message.update(message_params)
 
     if @message.save
