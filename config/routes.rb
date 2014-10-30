@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :matches
+  resources :matches, only: [:create] do
+   post '/confirm', to: 'pairing#confirm'
+  end
 
-  # resources :messages
+  resources :messages
 
   resources :user_activities
 
@@ -20,10 +22,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show]  do
     resources :messages
   end
-
-  #  resources :pairing, only: [:create] do
-  #   post '/confirm', to: 'pairing#confirm'
-  # end
 
   resources :users_languages, only: [:create, :destroy]
 
