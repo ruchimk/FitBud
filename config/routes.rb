@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   resources :matches
 
-  resources :messages
+  # resources :messages
 
   resources :user_activities
 
