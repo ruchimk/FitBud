@@ -1,18 +1,20 @@
-<%= form_for[current_user, @message] do |f| %>
+
+<%= form_for(@message) do |f| %>
   <% if @message.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
-
       <ul>
-      <% @message.errors.full_messages %>
+      <% @message.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
       </ul>
     </div>
   <% end %>
-
-  <div>
+ <div>
 <%= f.label 'Choose recipient' %> <br>
-    <%= f.collection_select :recipient_id, current_user.partners, :id, :name %>
-  </div>
+
+  <div class="field"><%= f.label :email %><br />
+  <%= f.email_field :email %></div>
 
   <div>
     <%= f.text_field :title, placeholder: 'Enter subject' %>
