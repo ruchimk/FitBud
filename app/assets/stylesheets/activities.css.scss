@@ -22,107 +22,88 @@
   // clear: both;
   // text-align: center;
   .activity-button{
-    text-align: center;
     width: 200px;
-    padding-top: 80px; padding-bottom: 80px;
+    height:200px;
     display: inline-block;
-    margin: 40px;
     cursor: pointer;
     border-radius: 8px;
-    font-weight: bolder;
-    font-size: 25px;
     letter-spacing: 1px;
+  }
+  .activity-button{
+    font-size: 30pt;
+    font-weight: bold;
+    margin: 80px 0 0 20px;
   }
   #hiking{
     color: #fff;
-   background-image: url('hiking.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #C40202, 0px 5px 0px 0px #C40202, 0px 10px 5px #999;
+    background-image: url('hiking.jpg');
   }
   #hiking:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #C40202, 0px 2px 0px 0px #C40202, 0px 5px 3px #999;
   }
   #running{
     color: #5D87E8;
     background-image: url('running.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #C2AD11, 0px 5px 0px 0px #C2AD11, 0px 10px 5px #999;
   }
   #running:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #C2AD11, 0px 2px 0px 0px #C2AD11, 0px 5px 3px #999;
   }
   #yoga{
     color: #000;
      background-image: url('yoga.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #DB3B00, 0px 5px 0px 0px #DB3B00, 0px 10px 5px #999;
   }
   #yoga:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #DB3B00, 0px 2px 0px 0px #DB3B00, 0px 5px 3px #999;
   }
-  #rock-climibing{
+  #rock-climbing{
     color: #fff;
      background-image: url('rock-climbing.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #008DBD, 0px 5px 0px 0px #008DBD, 0px 10px 5px #999;
   }
   #rock-climibing:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #008DBD, 0px 2px 0px 0px #008DBD, 0px 5px 3px #999;
   }
   #biking{
     color: #fff;
       background-image: url('biking.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #biking:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
   }
-    #biking{
+  #tennis{
     color: #fff;
-     background-image: url('biking.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
+     background-image: url('tennis.jpg');
   }
-  #biking:active{
+  #tennis:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
   }
-    #kayaking{
+  #kayaking{
     color: #fff;
      background-image: url('kayaking.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #kayaking:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
   }
     #soccer{
     color: #fff;
      background-image: url('soccer.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #soccer:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
   }
 
   #football{
     color: #fff;
      background-image: url('football.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #football:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
   }
   #basketball{
     color: #fff;
      background-image: url('basketball.jpg');
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 5px 0px 0px #A80000, 0px 10px 5px #999;
   }
   #basketball:active{
     top: 3px;
-    -webkit-box-shadow: inset 0px 0px 0px #A80000, 0px 2px 0px 0px #A80000, 0px 5px 3px #999;
   }
 
 }
