@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :matches, only: [:create] do
-   post '/confirm', to: 'pairing#confirm'
-  end
-
   resources :messages
 
   resources :user_activities
@@ -25,10 +21,14 @@ Rails.application.routes.draw do
 
   resources :users_languages, only: [:create, :destroy]
 
+  resources :match do
+  member do
+    put 'match_request'
+    put 'match_request_accept'
+    delete 'match_request_reject'
+  end
+end
 
-  # get 'match/create'
-
-  # get 'users/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

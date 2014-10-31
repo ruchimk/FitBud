@@ -2,7 +2,7 @@
 <div class="panel">
 <%= render 'common/flash' %>
 <section class="inbox">
-  <h2> <%= link_to 'My Inbox', new_user_message_path(current_user) %> </h2>
+  <h2>My Inbox</h2>
   <div class="messages">
   <div class="sent">
     <h3> Sent (<%= current_user.sent_messages.count %>) </h3>
