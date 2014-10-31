@@ -52,13 +52,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );
   color: white;
 }
-p {
-  color:white;
-}
-h4 {
-  color:white;
-}
-}
 
 a:link {color: white; text-decoration: underline; }
 a:active {color: #0000ff; text-decoration: underline; }
@@ -68,13 +61,13 @@ a:hover {color: #ff0000; text-decoration: none; }
 .partnerinfo{
   color: white;
 }
+
 .button2{
   width:200px;
   height:50px;
 }
 
-ul
-{
+ul{
     list-style-type: none;
 }
 
