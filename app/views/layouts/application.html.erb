@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>FitBud</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -25,7 +25,7 @@
           <li class="active"><a href="/activities">Browse Activities</a></li>
          <li class="active"><a href="/messages">Inbox</a></li>
          <li class="active"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-         <li class="active"><%= link_to 'Login', new_user_session_path %> </li>
+    <!--      <li class="active"><%= link_to 'Login', new_user_session_path %> </li> -->
          <% else %>
          <li class="active"><%= link_to 'Sign up', new_user_registration_path %> </li>
          <% end %>
@@ -47,27 +47,7 @@
     <p>Copyright (c) 2014 | FitBud </p>
 </div>
  -->
-<!--
 
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr/>
-      <div class="row">
-        <div class="large-6 columns">
-          <p>About FitBud: FitBud is an app designed to match people up by an outdoor activity they would like to find a partner for! Meet new people and stay Fit while doing it with FitBud!<br><br> Don't see your favorite activity? <a href="mailto:rmalik2788@gmail.com"> Contact us </a>|© Copyright 2014 DC WDI FitBud.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
- -->
 
 </body>
 </html>
