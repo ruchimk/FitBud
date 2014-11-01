@@ -1,11 +1,10 @@
-FitBud
-=====================================================
+# *FitBud*
+
 
 FitBud is an app that makes it easy to find users interested in your favorite outdoor activity. It is a Ruby on Rails project completed as the first project part of Web Development Immersive course at General Assembly. This app was developed in a 4 day sprint using the agile software development process.
 
 ```
-<p> Technologies Used </p>
-
+### *Technologies Used*
 ```
 * Ruby 2.1.2
 * Ruby on Rails 4.1.1
@@ -17,7 +16,7 @@ FitBud is an app that makes it easy to find users interested in your favorite ou
 * Navigation and panel divs from Zurb Foundation
 
 ```
-<p> User Stories Completed </p>
+### *User Stories Completed*
 ```
 
 1. A user should land on the index page(activities index) once logged in.
@@ -34,11 +33,11 @@ FitBud is an app that makes it easy to find users interested in your favorite ou
 
 
 ```
-<p> Future Goals: </p>
+### *Future Goals:*
 ```
 
 * Add location (Geocoder or Google Maps API)
 * Add algorithm to match the users nearby based on their common interests.
 * Use a Foundation template to fix sticky footer and make site more responsive.
 
-<p> Visit [FitBud](https://mysterious-oasis-1066.herokuapp.com/activities)! </p>
+[Visit FitBud](https://mysterious-oasis-1066.herokuapp.com/activities)!
