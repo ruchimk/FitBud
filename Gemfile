@@ -42,16 +42,23 @@ group :test do
   gem 'database_cleaner'
 end
 
+#Add image upload feature for profile pictures.
 gem 'paperclip', '~> 4.2.0'
 
-
+#CSS to transfer once deployed on Heroku
 gem 'rails_12factor', group: :production
 
+#Nav-bar and panel
 gem 'zurb-foundation'
 
+#Create Fake data for testing
 gem 'faker'
 
+#AWS for Paperclip capabilities to work on Heroko
 gem 'aws-sdk'
+
+#Geocoder for Location services
+gem 'geocoder'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
