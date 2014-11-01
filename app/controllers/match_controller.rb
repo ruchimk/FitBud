@@ -9,13 +9,13 @@ class MatchController < ApplicationController
     # accepting a match request is done by the recipient of the match request.
     # thus the current user is identified by to_id.
 
-    match = Match.where(to_id: current_user.id, partner_id: params[:id]).first
+    match = Match.where(user: current_user.id, partner_id: params[:id]).first
     match.update_attributes(accepted: true)
     flash[:success] = "Partnership confirmed!"
   end
 
   def match_request_reject
-    match = Match.where(to_id: current_user.id, partner_id: params[:id]).first
+    match = Match.where(user: current_user.id, partner_id: params[:id]).first
     match.destroy
     flash[:success] = "Sorry Match Request was denied."
   end
