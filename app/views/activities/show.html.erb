@@ -7,7 +7,7 @@
   <% @activity.users.each do |user| %>
     <div class="activitylinks">
       <%= link_to(user_path(user)) do %>
-        <%= image_tag(user.avatar(:thumb))%>
+        <%# image_tag(user.avatar(:thumb))%>
         <p><%= user.username.capitalize %> </p>
       <% end %>
   <% end %>
