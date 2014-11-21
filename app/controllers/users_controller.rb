@@ -5,4 +5,5 @@ class UsersController < ApplicationController
     @partner = User.find(params[:id])
     @activities = Activity.all
   end
+
 end
