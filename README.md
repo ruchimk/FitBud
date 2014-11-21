@@ -46,5 +46,7 @@ FitBud is a Ruby on Rails project completed as the first project part of Web Dev
 
 Please feel free to contact me with any thoughts, comments or suggestions on how to improve this site at rmalik2788@gmail.com.
 
+[ ![Codeship Status for ruchimk/FitBud](https://codeship.com/projects/67580eb0-317f-0132-3617-42b9a23cf717/status)](https://codeship.com/projects/40121)
+
 - - -
 [Visit FitBud](https://mysterious-oasis-1066.herokuapp.com/activities)!
