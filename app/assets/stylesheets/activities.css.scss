@@ -6,16 +6,16 @@
   padding: 50px 30px 50px 30px;
   background-color: white;
   margin: 0 auto;
-  width: 300px;
-  height: 550px;
+  width: 200px;
+  height: 300px;
 
     h2{
       color:#0099cc;
     }
 }
 
-.index h3 {
-  color:green;
+.index .panel h3 {
+  color:white;
 }
 
 .index {
@@ -28,15 +28,15 @@
     cursor: pointer;
     border-radius: 8px;
     letter-spacing: 1px;
-  }
-  .activity-button{
     font-size: 30pt;
     font-weight: bold;
     margin: 80px 0 0 20px;
+     background-size: cover;
   }
   #hiking{
     color: #fff;
     background-image: image-url('hiking.jpg');
+
   }
   #hiking:active{
     top: 3px;

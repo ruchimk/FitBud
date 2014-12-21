@@ -53,9 +53,9 @@
   color: white;
 }
 
-a:link {color: white; text-decoration: underline; }
-a:active {color: #0000ff; text-decoration: underline; }
-a:visited {color: white; text-decoration: underline; }
+a:link {color: white; text-decoration: none; }
+a:active {color: #0000ff; text-decoration: none; }
+a:visited {color: white; text-decoration: none; }
 a:hover {color: #ff0000; text-decoration: none; }
 
 .partnerinfo{

@@ -70,7 +70,7 @@ class ActivitiesController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_activity
     unless @activity = current_user.activites.where(id: params[:id]).first
-      flash[:alert] = 'Bookmark not found.'
+      flash[:alert] = 'Activity not found.'
       redirect_to root_url
     end
   end
