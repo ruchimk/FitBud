@@ -7,37 +7,37 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<!--   <div class="wrapper"> -->
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="/activities">FitBud</a></h1>
-    </li>
-  </ul>
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="has-dropdown">
-        <a href="#">Options</a>
-        <ul class="dropdown">
-        <% if user_signed_in? %>
-          <li class="active"><%= link_to "My Profile", user_path(current_user) %></li>
-          <li class="active"><a href="/activities">Browse Activities</a></li>
-         <li class="active"><a href="/messages">Inbox</a></li>
-         <li class="active"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-    <!--      <li class="active"><%= link_to 'Login', new_user_session_path %> </li> -->
-         <% else %>
-         <li class="active"><%= link_to 'Sign up', new_user_registration_path %> </li>
-         <% end %>
-       </ul>
+<div class="wrapper">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/activities">FitBud</a></h1>
       </li>
     </ul>
-  </section>
-</nav>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown">
+          <a href="#">Options</a>
+          <ul class="dropdown">
+          <% if user_signed_in? %>
+            <li class="active"><%= link_to "My Profile", user_path(current_user) %></li>
+            <li class="active"><a href="/activities">Browse Activities</a></li>
+           <li class="active"><a href="/messages">Inbox</a></li>
+           <li class="active"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      <!--      <li class="active"><%= link_to 'Login', new_user_session_path %> </li> -->
+           <% else %>
+           <li class="active"><%= link_to 'Sign up', new_user_registration_path %> </li>
+           <% end %>
+         </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
 
-<%= yield %>
-
-<div id="footer"> <p>About FitBud: FitBud is an app designed to match people up by an outdoor activity they would like to find a partner for.<br> Stay Fit while making a new Bud through FitBud!<br><br> Don't see your favorite activity? <a href="mailto:rmalik2788@gmail.com"> Contact us </a> | © 2014 DC WDI FitBud </p> </div>
+  <%= yield %>
+</div>
+<div id="footer"> <div>About FitBud: FitBud is an app designed to match people up by an outdoor activity they would like to find a partner for.<br> Stay Fit while making a new Bud through FitBud!<br> Don't see your favorite activity? <a href="mailto:rmalik2788@gmail.com"> Contact us </a> | © 2014 DC WDI FitBud </div> </div>
 
 
 <!--     <p>About FitBud: FitBud is an app designed to match people up by an outdoor activity they would like to find a partner for! Meet new people and stay Fit while doing it with FitBud!<br><br> Don't see your favorite activity? <a href="mailto:rmalik2788@gmail.com"> Contact us </a>
