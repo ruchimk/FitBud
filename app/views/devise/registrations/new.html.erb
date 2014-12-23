@@ -2,7 +2,7 @@
 <div class="row">
 <div class="small-6 small-centered small-centered columns">
   <div class="panel">
-  <h2>Sign up</h2>
+  <h2 class="devise-forms">Sign up</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -38,7 +38,7 @@
   <%= f.text_field :about_me, placeholder: 'Anything you else you want your FitBud to know!' %></div>
 
 
-  <a class="button round"><%= f.submit "Sign up" %></a>
+  <a class="button-round"><%= f.submit "Sign up" %></a>
 <% end %>
 
 <%= render "devise/shared/links" %>
