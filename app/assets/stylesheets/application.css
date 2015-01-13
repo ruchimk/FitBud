@@ -63,8 +63,12 @@ a:active {color: #0000ff; text-decoration: underline; }
 a:visited {color: white; text-decoration: none; }
 a:hover {color: #ff0000; text-decoration: underline; }
 
-.partnerinfo{
+.partnerinfo p {
   color: white;
+}
+
+h2, h4, p {
+  color:white;
 }
 
 .button2{

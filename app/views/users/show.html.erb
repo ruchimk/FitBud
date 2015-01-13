@@ -4,11 +4,12 @@
   <div class="small-6 small-centered small-centered columns">
   <div class="panel">
 <div class="showuser">
-
+<% if current_user %>
 <%= image_tag @user.avatar.url(:medium) %>
-
+<% else %>
+<%= image_tag @partner.avatar.url(:medium) %>
+<% end %>
   <%= render 'info' %>
-
 <!-- </section> -->
 </div>
 </div>

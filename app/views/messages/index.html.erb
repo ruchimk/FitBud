@@ -8,9 +8,8 @@
     <h3> Sent (<%= current_user.sent_messages.count %>) </h3>
       <% current_user.sent_messages.each do |message| %>
         <h4><%=  message.title %></h4>
-        <p> <%= message.body %> </p>
+        <p> <%= message.body %></p>
         <%= link_to 'delete', user_message_path(user_id: current_user.id, id: message.id), method: :delete %>
-
       <% end %>
   </div>
   <div class="received">
@@ -18,7 +17,7 @@
     <% current_user.received_messages.each do |message| %>
       <h4><%=  link_to message.title, user_message_path(user_id: message.recipient_id, id: message.id) %> </h4>
       <p><%= message.body %> </p>
-
+       <%= link_to 'delete', user_message_path(user_id: current_user.id, id: message.id), method: :delete %>
     <% end %>
   </div>
   </div>
