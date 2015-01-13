@@ -3,12 +3,14 @@
 <div class="row">
 <div class="small-6 small-centered small-centered columns">
 <div class="panel">
-  <h3> <%= pluralize(@activity.users.count, "FitBud") %> selected <%= @activity.name %> too! </h3>
+  <h3> <%= pluralize(@activity.users.count-1, "FitBud") %> selected <%= @activity.name %> too! </h3>
   <% @activity.users.each do |user| %>
+  <% if user != current_user %>
     <div class="activitylinks">
       <%= link_to(user_path(user)) do %>
-        <%# image_tag(user.avatar(:thumb))%>
+        <p><%= image_tag(user.avatar(:thumb))%></p>
         <p><%= user.username.capitalize %> </p>
+        <% end %>
       <% end %>
   <% end %>
   </div>
