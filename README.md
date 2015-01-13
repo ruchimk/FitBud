@@ -12,13 +12,14 @@
 - - -
 
 * Ruby 2.1.2
-* Ruby on Rails 4.1.1
+* [Rails](https://github.com/rails/rails) 4.1.1
 * PostgreSQL Database
-* User authentication & authorization from Devise gem
-* Profile picture functionality from Paperclip gem
+* User authentication & authorization from [Devise](https://github.com/plataformatec/devise) gem
+* Profile picture functionality from [Paperclip](https://github.com/thoughtbot/paperclip) gem
 * Testing using rspec-rails, capybara, shoulda-matchers and factory_girl_rails
-* CSS styling using SASS
+* CSS styling using [SASS](https://github.com/sass/sass)
 * Navigation and panel divs from Zurb Foundation
+* [Lucid Charts](https://www.lucidchart.com/) for ERD
 
 ### User Stories Completed
 - - -
