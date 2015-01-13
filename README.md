@@ -2,8 +2,8 @@
 - - -
 ## About
 
+[Entity Relationship Diagram](http://imgur.com/Jf9rFUv)
 [Visit FitBud](http://fitbud.herokuapp.com/users/login)!
-
 
 > FitBud is an app that makes it easy to find users interested in your favorite outdoor activity. Finding the motivation to workout alone can be difficult, but with the help of FitBud, you can make a new friend to help you stay motivated and on track with your goals!
 >FitBud is a Ruby on Rails project completed as the first project part of Web Development Immersive course at General Assembly. This app was developed in a 4 day sprint using the agile software development process.
